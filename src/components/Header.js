@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <GlowCapture size={1200}>
       <Glow color="hsl(338.69 100% 48.04%)">
-        <header className="sidebar-header glowable-sidebar">
+        <header className="sidebar-header">
             <div>
               <img src="/images/headshot.jpg" alt="" />
             </div>
@@ -28,16 +28,16 @@ const Header = () => {
             <a href="#resume">Resume</a>
           </nav>
           <div className="social-icon">
-            <a href="#">
+            <a href="https://www.linkedin.com/in/dylan-chipun/" target="_blank" rel="noopener noreferrer">
               <FaLinkedin />
             </a>
-            <a href="#">
+            <a href="https://github.com/Dylyn" target="_blank" rel="noopener noreferrer">
               <FaGithub />
             </a>
-            <a href="#">
+            <a href="https://www.youtube.com/@DylanChipun" target="_blank" rel="noopener noreferrer">
               <FaYoutube />
             </a>
-            <a href="#">
+            <a href="https://www.instagram.com/dyln.chpn/" target="_blank" rel="noopener noreferrer">
               <FaInstagram />
             </a>
           </div>

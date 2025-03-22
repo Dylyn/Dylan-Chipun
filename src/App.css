@@ -170,15 +170,14 @@ section p {
 }
 
 .sidebar-header {
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   width: 700px;
   height: 100vh;
   background-color: inherit;
-  padding-left: 150px;
-  padding-right: 50px;
-  padding-top: 100px;
+  margin-left: 150px;
+  margin-top: 100px;
   /* box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); */
 }
 
@@ -202,6 +201,8 @@ section p {
 
 .main-content {
   flex: 1;
+  margin-left: calc(650px);
+  margin-right: 100px;
   padding: 20px;
   overflow-y: auto;
 }
@@ -214,6 +215,7 @@ section p {
 .about-section {
     display: flex;
     align-items: center;
+    flex-direction: column;
     gap: 50px;
     padding: 40px;
     max-width: 1200px;
@@ -226,15 +228,17 @@ section p {
 }
 
 .about-image img {
-    width: 100%;
-    height: auto;
+    width: 50%; /* Adjusted width for smaller size */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Crop the photo naturally */
+    aspect-ratio: 3 / 4; /* Set aspect ratio to 3:4 */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .about-content {
     flex: 2;
-    text-align: left;
+    text-align: center;
 }
 
 .about-content h2 {
@@ -256,10 +260,66 @@ section p {
 
 .glowable-background {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: #09152c; /* Default background color */
 }
 
 [glow] .glowable-background {
   background-color: #0d2049; /* Glow color when hovered */
+}
+
+.gallery {
+    width: 100%;
+}
+
+.gallery-container {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Set a fixed height for the gallery */
+    overflow: hidden; /* Hide overflow */
+}
+
+.gallery-item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the area */
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; /* Smooth transition */
+}
+
+.gallery-item.active {
+    opacity: 1; /* Fully visible */
+}
+
+.gallery-item:not(.active) {
+    opacity: 0; /* Hidden */
+}
+
+.gallery-item-1, .gallery-item-3 {
+    height: 300px;
+    width: 250px; /* Adjusted width for 3:4 aspect ratio */
+    opacity: 0.5;
+    z-index: 1;
+    object-fit: cover; /* Ensures the image is cropped instead of stretched */
+}
+
+.gallery-item-1 {
+    left: 25%;
+    transform: translateX(-50%);
+}
+
+.gallery-item-2 {
+    box-shadow: -2px 5px 33px 6px rgba(0, 0, 0, 0.35);
+    height: 300px;
+    opacity: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250px;
+    z-index: 2;
+    object-fit: cover; /* Ensures the image is cropped instead of stretched */
+}
+
+.gallery-item-3 {
+    left: 75%;
+    transform: translateX(-50%);
 }
