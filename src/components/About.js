@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from "react";
 import headshot from "../images/headshot.jpg";
 import soloCruise from "../images/soloCruise.jpeg";
-import guitarChubs from "../images/guitarChubs.JPG"
+import guitarChubs from "../images/guitarChubs.JPG";
+import snowboarding from "../images/snowboarding.jpeg";
+import japanGroup from "../images/japanGroup.jpg";
+import youtubeChannel from "../images/youtubeChannel.png";
 
 
 const About = () => {
-  const images = [soloCruise, headshot, guitarChubs]; // Array of images
+  const images = [headshot, soloCruise, guitarChubs]; // Array of images
   const [currentIndex, setCurrentIndex] = useState(0); // State to track the current image index
 
   useEffect(() => {
@@ -16,44 +19,84 @@ const About = () => {
     return () => clearInterval(interval); // Cleanup on unmount
   }, [images.length]); // Dependency array to avoid stale closures
 
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      } /*else {
+        entry.target.classList.remove('show');
+      }*/
+    });
+  });
+
+  const hiddenElements = document.querySelectorAll('.hidden');
+  hiddenElements.forEach((el) => observer.observe(el));
+
   return (
     <section id="about">
-      <div className="subsection-header">
+      <div className="subsection-header hidden">
         <h2>About Me</h2>
       </div>
       <div className="about-section">
-        <div className="gallery">
-          <div className="gallery-container">
+        <figure className="icon-cards mt-3  hidden">
+          <div className="icon-cards__content">
             {images.map((image, index) => (
-              <img
-                key={index}
-                className={`gallery-item gallery-item-${index + 1} ${index === currentIndex ? 'active' : ''}`}
-                src={image}
-                alt={`gallery-${index}`}
-                style={{
-                  opacity: index === currentIndex ? 1 : 0.5,
-                  transform: index === currentIndex ? 'translateX(0)' : index < currentIndex ? 'translateX(-100%)' : 'translateX(100%)',
-                  transition: 'opacity 0.5s ease-in-out, transform 0.5s ease-in-out',
-                }}
-              />
+              <div className="icon-cards__item d-flex align-items-center justify-content-center" key={index} style={{ background: 'none' }}>
+                <img src={image} alt={`carousel-item-${index}`} style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '6px' }} />
+              </div>
             ))}
           </div>
-          <div className="gallery-controls"></div>
-        </div>
+        </figure>
         <div className="about-content">
-          <p>
+          <p class="hidden">
           Hi, I'm Dylan, a fifth-year Computing student at Queen's University with a passion for software development. 
           I love solving complex problems and building innovative solutions, whether it's through coding, creative designs, 
           or exploring new ideas.
           </p>
-          <p>
-          I have experience working as a software developer at RBC and will be returning as a new graduate in 2025–2026. 
-          My time in both academic and professional settings has strengthened my ability to think critically, adapt quickly,
-           and collaborate effectively.
-          </p>
-          <p>Beyond technical skills, I'm always eager to learn and take on new challenges. Whether it's diving into 
+          <p class="hidden">
+            Beyond technical skills, I'm always eager to learn and take on new challenges. Whether it's diving into 
             new technologies or refining my skills, I'm committed to continuous growth.
           </p>
+          <h2 className="hidden items-left">Hobbies</h2>
+          <div className="about-image items-left hidden">
+            <img src={snowboarding} alt="snowboarding" style={{ marginRight: '20px' }} />
+            <div>
+              <h2 className="hidden" style={{ fontSize: '20px' }}>Snowboarding</h2>
+              <p className="hidden">
+                I have always been interested with sports. I started with hockey as a kid, then began
+                exploring other sports such as basketball, muay thai, and skateboarding.
+              </p>
+              <p className="hidden">
+                Of all the sports I enjoy, snowboarding has always been my favourite. I began snowboarding 
+                at the age of 9 and it has became my favourite sport ever since. One of my life goals is 
+                to backcountry snowboard down the Swiss Alps!
+              </p>
+            </div>
+          </div>
+          <div className="about-image items-right hidden">
+            <div>
+              <h2 className="hidden" style={{ fontSize: '20px' }}>Travelling</h2>
+              <p className="hidden">
+                I find that travelling is one of the best ways to relax and gain new perspectives on life.
+                 It provides unforgettable memories and experiences that develop my understanding of the world.
+              </p>
+              <p className="hidden">
+                One of my most fond trips was my vacation to Japan where I spent around one month with my friends
+                exploring one of my favourite cultures. 
+              </p>
+              </div>
+              <img src={japanGroup} alt="japanGroup" style={{ marginLeft: '20px' }} />
+          </div>
+          <div className="about-image items-left hidden">
+            <img src={youtubeChannel} alt="youtubeChannel" style={{ marginRight: '20px' }} />
+            <div>
+              <h2 className="hidden" style={{ fontSize: '20px' }}>Video Creating</h2>
+              <p className="hidden">
+                I have always had a passion for video creating growing up. Because of that, over the past 2 years
+                I have been documenting my vacations and editing them with the skills I learned using the Adobe Suites.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>

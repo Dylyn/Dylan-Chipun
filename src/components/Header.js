@@ -7,24 +7,18 @@ const Header = () => {
   return (
     <GlowCapture size={1200}>
       <Glow color="hsl(338.69 100% 48.04%)">
-        <header className="sidebar-header">
-            <div>
-              <img src="/images/headshot.jpg" alt="" />
-            </div>
+        <header className="sidebar-header hidden">
             <div className="home-content">
               <h1>
-                Hi, I'm <span>Dylan Chipun</span>
+                <span>Dylan Chipun</span>
               </h1>
-              <h3 className="typing-text">
+              <h3>
                 <span>Software Developer and Student</span>
-              </h3>
-              <h3 className="typing-text">
-                
               </h3>
             </div>
           <nav className="sidebar-nav">
             <a href="#about">About Me</a>
-            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
             <a href="#resume">Resume</a>
           </nav>
           <div className="social-icon">

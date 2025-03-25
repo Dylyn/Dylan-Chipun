@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./components/Header";
 import About from "./components/About";
-import Experience from "./components/Experience";
+import Projects from "./components/Projects";
 import Resume from "./components/Resume";
 import { GlowCapture, Glow } from "@codaworks/react-glow";
 import "./App.css";
@@ -14,7 +14,7 @@ function App() {
           <Header />
           <main className="main-content">
             <About />
-            <Experience />
+            <Projects />
             <Resume />
           </main>
         </div>
