@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/dylan-chipun/static/css/main.81423826.css",
+    "main.js": "/dylan-chipun/static/js/main.6d016ff8.js",
+    "static/js/453.4bc9512e.chunk.js": "/dylan-chipun/static/js/453.4bc9512e.chunk.js",
+    "static/media/snowboarding.jpeg": "/dylan-chipun/static/media/snowboarding.1787a6c20f4d3ed41492.jpeg",
+    "static/media/youtubeChannel.png": "/dylan-chipun/static/media/youtubeChannel.43549389e1a051e85a91.png",
+    "static/media/soloCruise.jpeg": "/dylan-chipun/static/media/soloCruise.366ff402eec7c77de954.jpeg",
+    "static/media/guitarChubs.JPG": "/dylan-chipun/static/media/guitarChubs.b15f8bb3906355b4b2bb.JPG",
+    "static/media/japanGroup.jpg": "/dylan-chipun/static/media/japanGroup.580b37cbd2698e509557.jpg",
+    "static/media/headshot.jpg": "/dylan-chipun/static/media/headshot.6d3520b493a8a5250301.jpg",
+    "static/media/qbnbmain.png": "/dylan-chipun/static/media/qbnbmain.3b24f4b9ac4e93601300.png",
+    "static/media/resumepdf.pdf": "/dylan-chipun/static/media/resumepdf.65ec30e78ebeae0de5d4.pdf",
+    "static/media/communityCanvas.jpg": "/dylan-chipun/static/media/communityCanvas.aef8bbb480a1432ff114.jpg",
+    "static/media/PersonaThumbnail.jpg": "/dylan-chipun/static/media/PersonaThumbnail.168d7b5f32a2b8e11fc4.jpg",
+    "static/media/resume.jpg": "/dylan-chipun/static/media/resume.fdce16e87d6fc6a7b4e0.jpg",
+    "index.html": "/dylan-chipun/index.html",
+    "main.81423826.css.map": "/dylan-chipun/static/css/main.81423826.css.map",
+    "main.6d016ff8.js.map": "/dylan-chipun/static/js/main.6d016ff8.js.map",
+    "453.4bc9512e.chunk.js.map": "/dylan-chipun/static/js/453.4bc9512e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.81423826.css",
+    "static/js/main.6d016ff8.js"
+  ]
+}
