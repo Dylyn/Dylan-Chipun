@@ -2,6 +2,7 @@ import React from "react";
 import persona from "../images/PersonaThumbnail.jpg";
 import canvas from "../images/communityCanvas.jpg";
 import qbnb from "../images/qbnbmain.png";
+import { FaLink } from "react-icons/fa";
 
 const Projects = () => {
   return (
@@ -14,7 +15,12 @@ const Projects = () => {
           <div className="projects-image items-left hidden">
             <img src={persona} alt="persona" />
             <div style={{ flexDirection:"column" }}>
-              <h2 style={{ fontSize:"18px" }}>Superhero Personality Quiz</h2>
+              <div style={{ display:"flex", flexDirection:"row" }}>
+                <a href="https://github.com/Dylyn/Superhero-Personality-Quiz" target="_blank" rel="noopener noreferrer">
+                  <h2 style={{ fontSize:"18px" }}>Superhero Personality Quiz</h2>
+                </a>
+                <FaLink style={{ paddingLeft:"10px", fontSize: "24px" }} />
+              </div>
               <p>A fun personality quiz inspired by MBTI. The quiz provides users
                 with and interesting way to view their own unique personality types with
                 fun images and graphics
@@ -59,7 +65,12 @@ const Projects = () => {
           <div className="projects-image items-left hidden">
             <img src={qbnb} alt="qbnb" />
             <div style={{ flexDirection:"column" }}>
-              <h2 style={{ fontSize:"18px" }}>QBNB</h2>
+              <div style={{ display:"flex", flexDirection:"row" }}>
+                <a href="https://github.com/andrewzhng2/CISC327-Course-Project" target="_blank" rel="noopener noreferrer">
+                  <h2 style={{ fontSize:"18px" }}>QBnB</h2>
+                </a>
+                <FaLink style={{ paddingLeft:"10px", fontSize: "24px" }} />
+              </div>
               <p>As the final project of my Software Quality Assurance course, we were tasked with making
                 a AirBnb duplicate. features include, user registration, create and book listings, unit reviews,
                 and account transactions

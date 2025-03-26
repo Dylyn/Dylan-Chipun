@@ -1,6 +1,6 @@
 import React from "react";
-import { FaBars } from "react-icons/fa";
-import { FaLinkedin, FaGithub, FaYoutube, FaInstagram} from "react-icons/fa";
+import { FaBars, FaEnvelope } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaYoutube, FaInstagram } from "react-icons/fa";
 import { GlowCapture, Glow } from "@codaworks/react-glow";
 
 const Header = () => {
@@ -15,6 +15,7 @@ const Header = () => {
               <h3>
                 <span>Software Developer and Student</span>
               </h3>
+              <p>dylan.chipun@gmail.com</p>
             </div>
           <nav className="sidebar-nav">
             <a href="#about">About Me</a>
