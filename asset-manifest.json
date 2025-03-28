@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/dylan-chipun/static/css/main.6249f69a.css",
-    "main.js": "/dylan-chipun/static/js/main.f58ec824.js",
+    "main.js": "/dylan-chipun/static/js/main.29c2d44d.js",
     "static/js/453.4bc9512e.chunk.js": "/dylan-chipun/static/js/453.4bc9512e.chunk.js",
     "static/media/snowboarding.jpeg": "/dylan-chipun/static/media/snowboarding.1787a6c20f4d3ed41492.jpeg",
     "static/media/youtubeChannel.png": "/dylan-chipun/static/media/youtubeChannel.43549389e1a051e85a91.png",
@@ -16,11 +16,11 @@
     "static/media/resume.jpg": "/dylan-chipun/static/media/resume.fdce16e87d6fc6a7b4e0.jpg",
     "index.html": "/dylan-chipun/index.html",
     "main.6249f69a.css.map": "/dylan-chipun/static/css/main.6249f69a.css.map",
-    "main.f58ec824.js.map": "/dylan-chipun/static/js/main.f58ec824.js.map",
+    "main.29c2d44d.js.map": "/dylan-chipun/static/js/main.29c2d44d.js.map",
     "453.4bc9512e.chunk.js.map": "/dylan-chipun/static/js/453.4bc9512e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6249f69a.css",
-    "static/js/main.f58ec824.js"
+    "static/js/main.29c2d44d.js"
   ]
 }
