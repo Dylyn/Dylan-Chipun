@@ -5,19 +5,21 @@ import guitarChubs from "../images/guitarChubs.JPG";
 import snowboarding from "../images/snowboarding.jpeg";
 import japanGroup from "../images/japanGroup.jpg";
 import youtubeChannel from "../images/youtubeChannel.png";
+import headshotNew from "../images/headshotNEW.jpg";
+import hkGroup from "../images/hkGroup.jpg";
 
 
 const About = () => {
-  const images = [headshot, soloCruise, guitarChubs]; // Array of images
+  const images = [headshotNew, headshot, hkGroup]; 
   const [currentIndex, setCurrentIndex] = useState(0); // State to track the current image index
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length); // Cycle through images
-    }, 3000); // Change image every 3 seconds
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length); // Cycle imasges
+    }, 3000);
 
     return () => clearInterval(interval); // Cleanup on unmount
-  }, [images.length]); // Dependency array to avoid stale closures
+  }, [images.length]);
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
