@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Dylan-Chipun/static/css/main.6249f69a.css",
-    "main.js": "/Dylan-Chipun/static/js/main.4a58971f.js",
+    "main.js": "/Dylan-Chipun/static/js/main.7764877e.js",
     "static/js/453.4bc9512e.chunk.js": "/Dylan-Chipun/static/js/453.4bc9512e.chunk.js",
     "static/media/snowboarding.jpeg": "/Dylan-Chipun/static/media/snowboarding.1787a6c20f4d3ed41492.jpeg",
     "static/media/youtubeChannel.png": "/Dylan-Chipun/static/media/youtubeChannel.43549389e1a051e85a91.png",
@@ -14,16 +14,17 @@
     "static/media/qbnbmain.png": "/Dylan-Chipun/static/media/qbnbmain.3b24f4b9ac4e93601300.png",
     "static/media/resumepdf.pdf": "/Dylan-Chipun/static/media/resumepdf.65ec30e78ebeae0de5d4.pdf",
     "static/media/headshotNEW.jpg": "/Dylan-Chipun/static/media/headshotNEW.88c07e883207825e0b74.jpg",
+    "static/media/TaskManagerThumbnail.jpg": "/Dylan-Chipun/static/media/TaskManagerThumbnail.12236320a6326436561a.jpg",
     "static/media/communityCanvas.jpg": "/Dylan-Chipun/static/media/communityCanvas.aef8bbb480a1432ff114.jpg",
     "static/media/PersonaThumbnail.jpg": "/Dylan-Chipun/static/media/PersonaThumbnail.168d7b5f32a2b8e11fc4.jpg",
     "static/media/resume.jpg": "/Dylan-Chipun/static/media/resume.fdce16e87d6fc6a7b4e0.jpg",
     "index.html": "/Dylan-Chipun/index.html",
     "main.6249f69a.css.map": "/Dylan-Chipun/static/css/main.6249f69a.css.map",
-    "main.4a58971f.js.map": "/Dylan-Chipun/static/js/main.4a58971f.js.map",
+    "main.7764877e.js.map": "/Dylan-Chipun/static/js/main.7764877e.js.map",
     "453.4bc9512e.chunk.js.map": "/Dylan-Chipun/static/js/453.4bc9512e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6249f69a.css",
-    "static/js/main.4a58971f.js"
+    "static/js/main.7764877e.js"
   ]
 }
