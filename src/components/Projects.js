@@ -1,5 +1,6 @@
 import React from "react";
 import persona from "../images/PersonaThumbnail.jpg";
+import task from "../images/TaskManagerThumbnail.jpg";
 import canvas from "../images/communityCanvas.jpg";
 import qbnb from "../images/qbnbmain.png";
 import basketball from "../images/basketballThumbnail.jpg";
@@ -46,27 +47,36 @@ const Projects = () => {
             </div>
           </div>
           <div className="projects-image items-left hidden">
-            <img src={persona} alt="persona" />
+            <img src={task} alt="task" />
             <div style={{ flexDirection:"column" }}>
               <div style={{ display:"flex", flexDirection:"row" }}>
-                <a href="https://github.com/Dylyn/Superhero-Personality-Quiz" target="_blank" rel="noopener noreferrer" style={{ display:"flex", flexDirection:"row" }}>
-                  <h2 style={{ fontSize:"18px" }}>Superhero Personality Quiz</h2>
+                <a href="https://github.com/Dylyn/Task-Man-ager" target="_blank" rel="noopener noreferrer" style={{ display:"flex", flexDirection:"row" }}>
+                  <h2 style={{ fontSize:"18px" }}>Task Manager App</h2>
                   <FaLink style={{ paddingLeft:"10px", fontSize: "24px" }} />
                 </a>
               </div>
-              <p>A fun personality quiz inspired by MBTI. The quiz provides users
-                with and interesting way to view their own unique personality types with
-                fun images and graphics
+              <p>A full-stack task manager app built with React, Node.js, Express, 
+                and SQLite, featuring real-time task editing, deletion, and persistent storage. 
+                Designed to simulate internal enterprise tools with clean CRUD functionality and a scalable structure.
               </p>
               <div className="project-tool-list">
+                <div className="project-tools">
+                  SQLite
+                </div>
                 <div className="project-tools">
                   React
                 </div>
                 <div className="project-tools">
-                  JavaScript
+                  Node.js
                 </div>
                 <div className="project-tools">
-                  HTML/CSS
+                  Express.js
+                </div>
+                <div className="project-tools">
+                  Axios
+                </div>
+                <div className="project-tools">
+                  Knex.js
                 </div>
               </div>
             </div>
